@@ -3,6 +3,10 @@
     border: 0px;
 }
 
+.container {
+    margin: 0px;
+}
+
 body {
     background-color: lightgray;
 }
@@ -21,6 +25,7 @@ h1 {
     margin-right: 35px;
     margin-bottom: 35px;
     padding-bottom: 25px;
+    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 h2 {
@@ -48,24 +53,97 @@ h2 {
 }
 
 .btn-primary {
-    position: relative;
     width: 300px;
-    left: 75px;
+    margin-left: 25px;
     background-color: red;
     border-radius: 45px;
     border-color: none;
 }
 
 .btn-secondary {
-    position: relative;
-    left: 100px;
     background-color:lightgrey;
     width: 300px;
     border-radius: 45px;
     border-color: lightgray;
+
 }
 
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    .wrapper {
+        width: 100%;
+        margin: auto;
+    }
+    h1 {
+        padding-left: 35px;
+        margin-left: 0px;
+    }
+    h2 {
+        text-align: center;
+    }
+    #password {
+        width: 100%;
+        margin: auto;
+    }
 
+    .btn-primary {
+        width: 275px;
+        align-items: center;
+        margin-bottom: 10px;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .btn-secondary {
+        width: 275px;
+        margin: auto;
+        padding-top: 6px;
+    }
+   
+}
 
+@media screen and (min-width: 601px) and (max-width: 860px)  {
+    .container {
+        margin: 0;
+    }
+    .wrapper {
+        width: 800px;
+        margin: auto;
+        margin-bottom: 35px;
+    }
+    h1 {
+        width: 800px;
+        text-align: center;        
+    }
+    h2 {
+        margin-right: 15px;
+    }
+    #password {
+        margin: auto;
+    }
 
+    .btn-primary {
+        margin-bottom: 15px;
+    }
+    .btn-secondary {
+        display: inline;
+        
+    }
+}
+
+@media screen and (min-width: 861px) {
+    .container {
+        content: center;
+        margin-left: 25px;
+    }
+    .wrapper {
+        width: 850px;
+        margin: auto;
+    }
+
+    #password {
+        margin: auto;
+    }
+}
 
