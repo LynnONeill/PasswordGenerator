@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <title>Password Generator</title>
+</head>
+
+<body background="Assets.ticks.png">
+
+
+  <script type="text/javascript">
+
+    var specialChar = ["!", ",", "#", "$", "%", "&", "*", "+", "<", "=", ">", "?", "@", "~"]
+    var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+    var numChar = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+        // alert("Welcome to the world's most awesome password generator!  Are you ready to create your new password?");
+
+
+        // Need to figure out how to place this if/else statement into a loop.
+        // var numberInput = prompt("How many characters would you like your password to have? Pick a number between 8 and 128");
+
+        // if(numberInput < 8 || numberInput > 128) {
+        //   prompt("Try again! How many characters would you like your password to have?  Pick a number between 8 and 128")
+        // }
+        // else if(numberInput > 7 && numberInput < 129){
+        //   passwordLength = numberInput
+        // }
+
+
+
+
+
+  </script>
+
+
+  <div class="container">
+    <header class="row">
+      <div class="col-12">
+        <h1>World's Most Awesome Password Generator</h1>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-12">
+          <h2>Generate a Password</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <br>
+          <textarea readonly id="password" placeholder="Your Secure Password"
+            aria-label="Generated Password"></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col 6">
+          <button type="button" class="btn btn-primary btn-lg">Generate Password</button>
+        </div>
+        <div class="col-6">
+          <button type="button" class="btn btn-secondary btn-lg">Copy to Clipboard</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>
