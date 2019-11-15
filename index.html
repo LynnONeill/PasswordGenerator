@@ -9,105 +9,83 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <script>src = "javascript.js"</script>
+
   <title>Password Generator</title>
 </head>
 
-<!-- <body background="Assets.ticks.png"> -->
+<body background="Assets/background.jpg">
 
-<div class="container">
-  <header class="row">
-    <div class="col-12">
-      <h1>World's Most Awesome Password Generator</h1>
-    </div>
-  </header>
-
-  <div class="wrapper">
-    <div class="row">
+  <div class="container">
+    <header class="row">
       <div class="col-12">
-        <h2>Generate a Password</h2>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-12">
-        <br>
-        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
       </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col 12 col-md-6">
-        <button type="button" class="btn btn-primary btn-lg">Generate Password</button>
+    </header>
+
+    <div background="Assets/background2.jpg" class="wrapper">
+      <div class="row">
+        <div class="col-12">
+          <h1>World's Most Awesome Password Generator</h1>
+        </div>
       </div>
 
-      <br>
+      <form>
+        <p>How many characters would you like your password to have? Enter a number between 8 and 128.</p>
+        <input name="characters" id="charBox" value="8" type="number" min="8" max="128" />
+        <row>
+          <br><br>
 
-      <div class="col-12 col-md-6">
-        <button type="button" class="btn btn-secondary btn-lg">Copy to Clipboard</button>
-      </div>
+        <!-- This area will give the user the opportuntiy to select the type of characters they would like for their password -->
+          <p>Which of the following would you like to have included in your password?</p>
 
-    </div>
-
-  </div>
-
-
-  </body>
-
-  <script>
-    var upper = ["ABCEDFGHIJKLMNOPQRSTUVWXYZ"]
-    var lower = ["abcdefghijklmnopqrstuvwxyz"];
-    var alpha = ["0123456789"];
-    var special = ["!,#$%^&*()~+=<>|?"];
-
-
-    alert("Welcome to the world's most awesome password generator!  Are you ready to create your new password?");
-
-    var charNo = prompt("How many characters would you like your password to be? Please pick a number between 8 and 128");
-
-    if(charNo >= 8 && charNo <= 128) {
-    var confAlpha = confirm("Would you like your password to include numbers?");
-    var confLower = confirm("Would you like your password to include lower case letters?");
-    var confUpper = confirm("Would you like your password to include upper case letters?");
-    var confSpecial = confirm("Would you like your password to include special characters?");
-    } else {
-      window.location.reload(false);
-    }
-
-    var fullPass = "Your password is ";
-    var charSet = "";
-    
-    // True of false statements that will allow the user to determine what characters they would like to have in their password.  With a true statement, the applicable character type will be added to a string representing the total available characters.
-    
-    if (confAlpha == true) {
-      charSet += alpha;
-    }
-
-    if (confLower == true) {
-      charSet += lower;
-    }
-
-    if (confUpper == true) {
-      charSet += upper;
-    }
-
-    if (confSpecial == true) {
-      charSet += special;
-    }
-    // for loop that will continue to pick random characters from the main character string until the number of selected characters is equal to the the number of characters selected by the user.
-    
-    for (var i = 0; i < charNo; i++) {
-
-      fullPass += charSet.charAt(Math.floor(Math.random() * charSet.length));
-      console.log(fullPass);
+          <div class="col-12 col-md-6">
+            <p>Upper Case Letters</p> <input type="checkbox" name="charTypes" value="Uppers" id="uppers">
+          </div>
       
-    }
+          <div class="col-12 col-md-6">
+            <p>Lower Case Letters</p> <input type="checkbox" name="charTypes" value="Lowers" id="lowers">
+          </div>
+        </row>
+        <br><br><br>
+        <row>
+          <div class="col-md-6 col-lg-6">
+            <p>Special Characters</p><input type="checkbox" name="charTypes" value="Specials" id="specials">
+            <br>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <p>Numbers</p> <input type="checkbox" name="CharTypes" value="Numbers" id="numbers">
+          </div>
+      </form>
+      <br> <br>
+      </row>
+     
+      <br>
+      <div class="row">
+        <div class="col 12 col-md-6">
+          <button type="button" class="btn btn-primary btn-lg" onclick="generate();">Generate Password</button>
+        </div>
 
-    if (charNo >= 8 && charNo <=128) {
-    alert(fullPass);
-    }
-  
+        <br>
 
-  </script>
+        <div class="col-12 col-md-6">
+          <button type="button" onclick="copy()" id="copy" class="btn btn-secondary btn-lg">Copy to Clipboard</button>
+        </div>
+
+      </div>
+      <div class="row">
+          <div class="col-12">
+            <br>
+            <textarea readonly id="password" placeholder="Your Secure Password"
+              aria-label="Generated Password"></textarea>
+          </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="javascript.js"></script>
+
+</body>
+
+
+
 
 </html>

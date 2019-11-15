@@ -4,64 +4,79 @@
 }
 
 .container {
-    margin: 0px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-right:50px;
 }
-
-body {
-    background-color: lightgray;
+#charBox {
+    width:100px;
+    text-align: center;
+    margin: auto;
 }
-
 h1 {
-    padding: 20px;
+    padding: 5px;
     font-size: 40px;
-    color: grey;
+    color: rgb(147, 211, 211);
     text-align: center;
+    border-bottom: solid;
+    border-color: rgb(147, 211, 211);
 }
 
-.wrapper {
-    background-color: white;
-    border-color: lightgray;
-    margin-left: 35px;
-    margin-right: 35px;
-    margin-bottom: 35px;
-    padding-bottom: 25px;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 h2 {
     padding: 45px 0px 25px 0px;
     margin-left: 35px;
     margin-right: 35px;
-    color: grey;
+    color: rgb(147, 211, 211);
     border-bottom: solid lightslategrey;
+}
+
+
+.wrapper {
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height:600px;
+    width: 1000px;
+    margin-bottom: 45px;
+    padding-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+p {
+    color: rgb(147, 211, 211);
+}
+.col-md-6 {
+    float: left;
 }
 
 #password {
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 15px;
     margin-left: 105px;
     margin-bottom: 35px;
-    width: 800px;
-    height: 300px;
+    width: 500px;
+    font-size: 15px;
+    text-align: center;
+    height: 125px;
     border-radius: 45px;
     border: 5px dashed lightgrey;
-}
-
-::placeholder {
-    text-align: center;
-    padding-top: 15px;
-    font-size: 24px;
 }
 
 .btn-primary {
     width: 300px;
     margin-left: 25px;
-    background-color: red;
+    border-color: rgb(47, 49, 58);
+    background-color: rgb(47, 49, 58);
     border-radius: 45px;
     border-color: none;
 }
 
 .btn-secondary {
     background-color:lightgrey;
+    color: rgb(47, 49, 58);
     width: 300px;
     border-radius: 45px;
     border-color: lightgray;
