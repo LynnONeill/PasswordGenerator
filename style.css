@@ -83,6 +83,23 @@ p {
 
 }
 
+#uppers {
+    width: 25px;
+    height: 25px;
+}
+#lowers {
+    width: 25px;
+    height: 25px;
+}
+
+#numbers {
+    width: 25px;
+    height: 25px;
+}
+#specials {
+    width: 25px;
+    height: 25px;
+}
 @media screen and (max-width: 600px) {
     .container {
         padding: 15px;
@@ -90,9 +107,9 @@ p {
     .wrapper {
         width: 100%;
         margin: auto;
+        height: 1100px;
     }
     h1 {
-        padding-left: 35px;
         margin-left: 0px;
     }
     h2 {
@@ -101,6 +118,10 @@ p {
     #password {
         width: 100%;
         margin: auto;
+    }
+
+    #passWordBox {
+        text-align: center;
     }
 
     .btn-primary {
