@@ -13,3 +13,5 @@ I used the following sources to create this project.
 
 https://www.youtube.com/watch?v=N8ap4k_1QEQ
 https://www.youtube.com/watch?v=uiv3oLsHbaI&t=627s
+
+https://github.com/LynnONeill/PasswordGenerator/issues/1#issue-523908857
